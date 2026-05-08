@@ -1,0 +1,12 @@
+# Terraform providers (huge binaries, auto-downloaded)
+.terraform/
+
+# Terraform state (sensitive infrastructure data)
+terraform.tfstate
+terraform.tfstate.backup
+
+# Private key — NEVER push!
+blockchain-ai-key.pem
+
+# Lock file (optional)
+.terraform.lock.hcl
