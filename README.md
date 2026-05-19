@@ -109,6 +109,39 @@ blockchain-cloud-project/
 └── README.md
 ```
 
+## Terraform Execution
+
+The Terraform files in this repository are included to show how the architecture is organized as infrastructure code. These commands are used to initialize, validate, and preview the AWS resources.
+
+### Prerequisites
+- Install Terraform
+- Configure AWS credentials locally
+- Make sure the required providers are available
+
+### Terraform Commands
+
+```bash
+terraform init
+terraform validate
+terraform plan
+```
+
+### Optional Deployment Command
+
+If you want to actually create the AWS resources, use:
+
+```bash
+terraform apply
+```
+
+### To Remove Resources
+
+If resources were created for testing, they can be removed with:
+
+```bash
+terraform destroy
+```
+
 ## Cost Estimate
 
 The architecture is designed with AWS cost planning in mind. The main services considered for estimation are EC2, RDS MySQL, Application Load Balancer, S3, and data transfer. This keeps the design practical and suitable for a student-scale cloud project.
